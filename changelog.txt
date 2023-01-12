@@ -8,3 +8,7 @@ Geomancer marks
 changed 'Tiaoli Follower, Chosen by' to 'Tiaoli' this will return any of the variable marks with that string.
 fixed spelling of 'Tiaoli'
 commented out a manual check of honor position
+
+added InputCleaner.py to remove spaces from input on "!eval  raymon"
+- this needs to be called in main.py to clean input before the input goes into something else
+like !add    karma would reject right now - but remove all spaces and rejoin to a string will make it !add karma!

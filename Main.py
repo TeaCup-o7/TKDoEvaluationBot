@@ -34,12 +34,15 @@ async def on_message(message):
                     fileXfer = discord.File("temp"+ eval.charName + ".txt", filename=fileName, spoiler = False)
                     await message.channel.send(file = fileXfer) #sends to discord temp eval file
                     os.remove("temp"+ str(eval.charName) + ".txt") #cleans up the temp eval file
-                    if str(message.author) != 'Slavell#8770' or str(message.author) != 'Sajuuk#4711':
-                        pass
-                    else:
-                        db.setEval(eval.charName, eval.author, "Pass")
+                    #if str(message.author) == 'Slavell#8770' or str(message.author) == 'Sajuuk#4711':
+                    #    print('this is slavell')
+                    #    pass
+                    #else:
+                    db.setEval(eval.charName, eval.author, "Pass")
+                    #    print('pass')
             except:
                 db.setEval(eval.charName, eval.author, "Fail")
+                print('fail')
 
 
         if message.content.lower().startswith('!add'):

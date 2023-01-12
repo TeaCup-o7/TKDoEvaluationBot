@@ -1,0 +1,8 @@
+1/12/23
+Pure_Water_Diplo.py
+added/changed 2 marks to check for:
+
+Diviner marks
+added "Born under the" to check for zodiac reveal mark. This will return any of the variable marks with that string. Born under the [variable], revealed by [variable]
+Geomancer marks
+changed 'Tiaoli Follower, Chosen by' to 'Tiaoli' this will return any of the variable marks with that string.

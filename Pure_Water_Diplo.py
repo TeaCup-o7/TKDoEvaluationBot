@@ -8,7 +8,7 @@ Diviner = ['Found Serenity in the Tao', 'Fortune revealed', 'rituals of Divinity
 'Saw the vision of Kujiga','Purified Marriage, blessed by', 'Swore oath to forsake all lies, witnessed','Attained Tai-chi. Guided by', 'Wove the Threads of Fate, assisted by',
 'Born under the Earth Sheep, revealed by Milana in', 'Mastered their understanding of the']
 
-Geomancer = ['Forged an orb of', 'Wu Wei', 'Wu Xing' ,'Taioli', 'Learned to walk the neutral path, marked by'] #, 'Tiaoli Follower, Chosen by'] #this guy wasn't considering initiates
+Geomancer = ['Forged an orb of', 'Wu Wei', 'Wu Xing' ,'Tiaoli', 'Learned to walk the neutral path, marked by'] #, 'Tiaoli Follower, Chosen by'] #this guy wasn't considering initiates
 
 Shaman = ['Kindred Spirits', 'Totem Spirit Revealed (Discovered by', 'Ascended through the Medicine Wheel',]
 Druid = ['Recognized as Herbalist by Druid', 'Bard by Druid', 'Ovate by Druid ', 'Aided the Druids in the mystic garden', 'Crafted a forgotten Druid artifact']

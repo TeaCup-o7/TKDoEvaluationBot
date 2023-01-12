@@ -80,14 +80,14 @@ def writeSection3(Object):
         + "\nPoints rewarded = " + str(Object.LBC))
     if (Object.LBC > 1):
         f.write("\n" + Object.charRank + " " + Object.charName
-        + "\nPoints rewarded for rank = " + str(Object.LBC))
+        + "\nLife of Breath points rewarded = " + str(Object.LBC))
 ##########################################################################
 #Raise Spirit Circle
     print("File opened for section 3 write.")
     f = open("temp"+ Object.charName + ".txt", "a")
     f.write("\n\n\n~~~~~Raise Spirit Circle~~~~~" 
     + '\n' + Object.RSCmsg2
-    + "\nPoints rewarded for rank = " + str(Object.RSCreward))
+    + "\nRaise Spirit points rewarded for = " + str(Object.RSCreward))
     print("File closed for section 3 write.")
     f.close()
 
@@ -103,7 +103,7 @@ def writeSection4(Object):
         f.write("\n" + Object.HSCmarks[pos])
         pos = pos + 1
     f.write('\n{}'.format(Object.HSCwisdomMsg))
-    f.write("\nPoints rewarded: " + str(Object.HSCreward))
+    f.write("\nHard Steel points rewarded for = " + str(Object.HSCreward))
 
     print("File closed for section 4 write.")
 
@@ -118,7 +118,7 @@ def writeSection5(Object):
     f.write('\n{}'.format(Object.PFCsecondaryMsg))
     f.write('\n{}'.format(Object.PFCprimaryMsg))
     f.write('\n{}'.format(Object.PFCweaponMsg))
-    f.write("\nPerfect Form points rewarded: " + str(Object.PFCreward))
+    f.write("\nPerfect Form points rewarded = " + str(Object.PFCreward))
     f.close()
     print("File closed for section 5 write.")
 
@@ -129,7 +129,7 @@ def writeSection6(Object):
     f = open("temp"+ Object.charName + ".txt", "a")
     f.write("\n\n\n~~~~~Thousand Steps Circle~~~~~")
     f.write("\n" + Object.TSCmarks)
-    f.write("\nThousand Steps Points rewarded: " + str(Object.TSCreward))
+    f.write("\nThousand Steps points rewarded = " + str(Object.TSCreward))
     print("File closed for section 6 write.")
 ##########################################################################
 #Sharp Stone Circle
@@ -168,7 +168,7 @@ def writeSection7(Object):
 def writeSection8(Object):
     print("File opened for section 8 write")
     f = open("temp"+ Object.charName + ".txt", "a")
-    f.write("\n\n\n~~~~~Pure Water Circle~~~~~" + "\n*Manual check required: Honorary Position - Primarch")
+    f.write("\n\n\n~~~~~Pure Water Circle~~~~~")#+ "\n*Manual check required: Honorary Position - Primarch")
     
     f.write("\nDiplomacy marks found:")
     pos = 0
@@ -216,7 +216,7 @@ def writeSection8(Object):
     f.write("\n" + Object.wepLore)
     f.write("\nWeapon Lore points rewarded: " + str(Object.PWCwep))
 
-    f.write("\nTotal points rewarded for Pure Water Circle: " + str(Object.PWCreward))
+    f.write("\nPure Water Circle points rewarded" + str(Object.PWCreward))
     f.close()
     print("File closed for section 8 write.")
 #################################################################################
@@ -274,8 +274,8 @@ def writeSection10(Object):
 def writeSection11(Object):
     print("File opened for section 11 write")
     f = open("temp"+ Object.charName + ".txt", "a")
-    f.write("\n\n\n~~~~~Tender Flesh Circle~~~~~ " 
-    + "\n*Manual check required: Solo Formidable Opponent")
+    f.write("\n\n\n~~~~~Tender Flesh Circle~~~~~ ")
+    #+ "\n*Manual check required: Solo Formidable Opponent")
     f.write("\n\nTender Flesh Qualified marks found:")
     pos = 0
     while pos < len(Object.TFCmarks):

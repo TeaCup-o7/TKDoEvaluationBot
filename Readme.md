@@ -13,13 +13,6 @@ How it works:
 note: Points are based on specific strings in a user's legend.
 note: The script file structure is built similar to these circles for organization.
 
-Life Breath Circle    |   5 Chambers
-[ ] 99th Insight       * This circle is never used to
-[ ] Il San               evaluate Do Titles.
-[ ] Ee San
-[ ] Sam San
-[ ] Sa San
-
 3) many values are not held on the user's page or in the index, so the Discord user may be prompted to fill in these records in the evaluation report.
 -example: if no karma records are found, the report will prompt the user to add one by asking them to issue the command !add karma [user] [level]
 --all of these values are held in a local database

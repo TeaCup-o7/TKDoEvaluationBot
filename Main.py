@@ -5,6 +5,7 @@ import key
 import reboot
 import DoDB as db
 import os
+import CleanInput
 
 key = key.getKey()
 try:
@@ -23,7 +24,8 @@ async def on_message(message):
     try:
         if message.author == client.user:
             return #ignores the bot's own messages.
-
+        message.content = CleanInput.cleanString(message.content)
+        print(message.content)
         if message.content.lower().startswith('!test') or message.content.lower().startswith('!eval'):
             eval = do.evalHandler(message)
             try:

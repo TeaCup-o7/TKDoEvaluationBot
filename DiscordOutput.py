@@ -32,7 +32,7 @@ class evalHandler:
             self.content = contentIn.content
             self.author = contentIn.author #this is the discord users real name
             self.nick = contentIn.author.nick
-            self.msg = ci.cleaner(contentIn.content.split(" "))
+            self.msg = contentIn.content.split(" ")
             self.person = self.msg[1] #this is the name the way the user input
             self.count = str(int(db.getEvalCount())+1)
             self.charName = None

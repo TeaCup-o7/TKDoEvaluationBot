@@ -14,3 +14,7 @@ fixed counter
 added InputCleaner.py to remove spaces from input on "!eval  raymon"
 - this needs to be called in main.py to clean input before the input goes into something else
 like !add    karma would reject right now - but remove all spaces and rejoin to a string will make it !add karma!
+
+1/21/23 
+Added cleanString to InputCleaner.py - cleanString accepts input of string, splits, removes spaces, and returns a complete string with no extra spaces.
+added this method call to main.py to clean input before it is evaluated by the first logic

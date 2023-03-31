@@ -300,7 +300,7 @@ def setHonor(person, discName):
 def getHonor(person):
     person = str(person.lower())
     try:
-        updater, date = db.getShield(person)
+        updater, date = db.getHonor(person)
     except Exception as err:
         tp = type(err)
         if tp == IndexError:

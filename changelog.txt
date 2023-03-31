@@ -18,3 +18,6 @@ like !add    karma would reject right now - but remove all spaces and rejoin to 
 1/21/23 
 Added cleanString to InputCleaner.py - cleanString accepts input of string, splits, removes spaces, and returns a complete string with no extra spaces.
 added this method call to main.py to clean input before it is evaluated by the first logic
+
+3/30/23 - Soulhunter Update
+Changed method call from getShield(name) to getHonor(name) - honorable position check was checking for shield credit and using the shield credit data to report as if it were an honorable position.

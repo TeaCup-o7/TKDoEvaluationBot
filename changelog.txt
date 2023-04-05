@@ -21,3 +21,26 @@ added this method call to main.py to clean input before it is evaluated by the f
 
 3/30/23 - Soulhunter Update
 Changed method call from getShield(name) to getHonor(name) - honorable position check was checking for shield credit and using the shield credit data to report as if it were an honorable position.
+
+4/4/23 - Diplomacy update
+changed list structure of marks in Pure_Water_Diplo.py to increase readability to accomidate verification of spelling and mark count request.
+
+Added ranger marks:
+Ranger = ['level in Archer (Marked by', #substring added 4/4/23
+          'level in Camouflage (Marked by', #substring added 4/4/23
+          'level in Cartography (Marked by', #substring added 4/4/23
+          'level in Foraging (Marked by', #substring added 4/4/23
+          'level in Security (Marked by', #substring added 4/4/23
+          'level in Tracking (Marked by', #substring added 4/4/23
+          'level in Trapping (Marked by'] #substring added 4/4/23
+Replaced monk marks to insure spelling accuracy:
+Monk = ['Exerted Right Effort, recorded by', #replaced old substring on 4/4/23
+        'Considered Right Mindfulness, recorded by', #replaced old substring on 4/4/23
+        'Performed Right Action, recorded by', #replaced old substring on 4/4/23
+        'Experienced Right Livelihood, recorded by', #replaced old substring on 4/4/23
+        'Contemplated Right Thinking, recorded by', #replaced old substring on 4/4/23
+        'Observed Right Views, recorded by', #replaced old substring on 4/4/23
+        'Vocalized Right Speech, recorded by', #replaced old substring on 4/4/23
+        'Reflected Right Meditation, recorded by', #replaced old substring on 4/4/23
+        
+    

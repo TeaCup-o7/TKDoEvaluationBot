@@ -3,27 +3,117 @@ import MarkFinder
 #START DIPLOMACY SECTION
 ########################
 
-Diviner = ['Found Serenity in the Tao', 'Fortune revealed', 'rituals of Divinity', 'Contributor of Joy. Observed by',
-'Alignment of Yin and Yang', 'Alignment of Yang', 'Alignment of Yin', 'Born under the', #Born under the is zodiac reveal
-'Saw the vision of Kujiga','Purified Marriage, blessed by', 'Swore oath to forsake all lies, witnessed','Attained Tai-chi. Guided by', 'Wove the Threads of Fate, assisted by',
-'Born under the Earth Sheep, revealed by Milana in', 'Mastered their understanding of the']
+#count=7
+Ranger = ['level in Archer (Marked by', #substring added 4/4/23
+          'level in Camouflage (Marked by', #substring added 4/4/23
+          'level in Cartography (Marked by', #substring added 4/4/23
+          'level in Foraging (Marked by', #substring added 4/4/23
+          'level in Security (Marked by', #substring added 4/4/23
+          'level in Tracking (Marked by', #substring added 4/4/23
+          'level in Trapping (Marked by'] #substring added 4/4/23
 
-Geomancer = ['Forged an orb of', 'Wu Wei', 'Wu Xing' ,'Tiaoli', 'Learned to walk the neutral path, marked by'] #, 'Tiaoli Follower, Chosen by'] #this guy wasn't considering initiates
+#count=15
+Diviner = ['Found Serenity in the Tao', 
+           'Fortune revealed', 
+           'rituals of Divinity', 
+           'Contributor of Joy. Observed by',
+            'Alignment of Yin and Yang',
+            'Alignment of Yang', 
+            'Alignment of Yin', 
+            'Born under the', #Born under the is zodiac reveal
+            'Saw the vision of Kujiga',
+            'Purified Marriage, blessed by', 
+            'Swore oath to forsake all lies, witnessed',
+            'Attained Tai-chi. Guided by', 
+            'Wove the Threads of Fate, assisted by',
+            'Born under the Earth Sheep, revealed by Milana in', 
+            'Mastered their understanding of the']
 
-Shaman = ['Kindred Spirits', 'Totem Spirit Revealed (Discovered by', 'Ascended through the Medicine Wheel',]
-Druid = ['Recognized as Herbalist by Druid', 'Bard by Druid', 'Ovate by Druid ', 'Aided the Druids in the mystic garden', 'Crafted a forgotten Druid artifact']
-Monk = ['in a Past Life, revealed by', 'Performed Right Action, recorded by', 'Exerted Right Effort, recorded by', 'Experienced Right Livelihood, recorded by',
-'Reflected Right Meditation, recorded by', 'Considered Right Mindfulness, recorded by', 'Vocalized Right Speech, recorded by', 'Contemplated Right Thinking, recorded by',
-'Observed Right Views, recorded by', 'Walked the Eightfold path', 'Renewed marriage vows to', 'Devoted to raven, observed by Druid']
-Muse = ['Empowered with the Aura of the Muses', 'Professor of Muse College', 'Discovered Kaleidoscope of Life', 'Destined to break hearts', 'Dazzling Socialite',
-'Survived Girl', 'Caught Conspiring with Girl', 'Dabbled in the Dark Arts', 'Graduated Muse College']
-Merchant = ['Certified Treasure Hunter', 'Treasure Hunter, approved by', 'Mastered the art of Trading', 'Certified Economist', 'Discovered True Wealth', 'Preferred Client', 
-'Deemed Lucky, affirmed by', 'Demonstrated Duty to Path', 'Embodied Duty to Self', 'Exemplified Duty to Community', 'Devout follower of Kubera', 'Economist, approved by','Ally of the Merchant Guild','Recognized Collector, marked','Lauded philanthropist, distinguished by']
-Spy = ['Associate of the Koguryian Spy Guild', 'Aided the KSG']
-Barbarian = ['Survived Wilderness training', 'Learned the ancient Sonhi art of the Throwing axe', 'Unearthed the Ancient Trails of the Wilderness', 'Sworn to the Horde']
-Chongun = ['Trained in the art of war,', 'Has demonstrated an understanding of honor', 'Mastered Heavenly Advance']
-Kingdoms = ['Benefactor of the Shining Jewel Foundation', 'Member of the Imperial Ministry of Buya', 'Member of the Royal Ministry of Koguryo','Member of the Eternal Order of Nagnang?', 'Awarded High Myongye',
-'Affiliate of the Sovereign', 'Knighted with Royal Nobility', 'Resolved the Gogoon Family']
+#count=5
+Geomancer = ['Forged an orb of', 
+             'Wu Wei', 
+             'Wu Xing' ,
+             'Tiaoli', 
+             'Learned to walk the neutral path, marked by'] #, 'Tiaoli Follower, Chosen by'] #this guy wasn't considering initiates
+
+#count=3
+Shaman = ['Kindred Spirits', 
+          'Totem Spirit Revealed (Discovered by', 
+          'Ascended through the Medicine Wheel']
+
+#count=5
+Druid = ['Recognized as Herbalist by Druid', 
+         'Bard by Druid', 
+         'Ovate by Druid ', 
+         'Aided the Druids in the mystic garden',
+         'Crafted a forgotten Druid artifact']
+
+#count=12
+Monk = ['Exerted Right Effort, recorded by', #replaced old substring on 4/4/23
+        'Considered Right Mindfulness, recorded by', #replaced old substring on 4/4/23
+        'Performed Right Action, recorded by', #replaced old substring on 4/4/23
+        'Experienced Right Livelihood, recorded by', #replaced old substring on 4/4/23
+        'Contemplated Right Thinking, recorded by', #replaced old substring on 4/4/23
+        'Observed Right Views, recorded by', #replaced old substring on 4/4/23
+        'Vocalized Right Speech, recorded by', #replaced old substring on 4/4/23
+        'Reflected Right Meditation, recorded by', #replaced old substring on 4/4/23
+        'in a Past Life, revealed by',
+        'Walked the Eightfold path', 
+        'Renewed marriage vows to', 
+        'Devoted to raven, observed by Druid']
+
+#count=9
+Muse = ['Empowered with the Aura of the Muses', 
+        'Professor of Muse College', 
+        'Discovered Kaleidoscope of Life', 
+        'Destined to break hearts', 
+        'Dazzling Socialite',
+        'Survived Girl', 
+        'Caught Conspiring with Girl', 
+        'Dabbled in the Dark Arts', 
+        'Graduated Muse College']
+
+#count=15
+Merchant = ['Certified Treasure Hunter', 
+            'Treasure Hunter, approved by', 
+            'Mastered the art of Trading', 
+            'Certified Economist', 
+            'Discovered True Wealth', 
+            'Preferred Client', 
+            'Deemed Lucky, affirmed by', 
+            'Demonstrated Duty to Path', 
+            'Embodied Duty to Self', 
+            'Exemplified Duty to Community', 
+            'Devout follower of Kubera', 
+            'Economist, approved by',
+            'Ally of the Merchant Guild',
+            'Recognized Collector, marked',
+            'Lauded philanthropist, distinguished by']
+
+#count=2
+Spy = ['Associate of the Koguryian Spy Guild', 
+       'Aided the KSG']
+
+#count=4
+Barbarian = ['Survived Wilderness training', 
+             'Learned the ancient Sonhi art of the Throwing axe', 
+             'Unearthed the Ancient Trails of the Wilderness', 
+             'Sworn to the Horde']
+
+#count=3
+Chongun = ['Trained in the art of war,', 
+           'Has demonstrated an understanding of honor', 
+           'Mastered Heavenly Advance']
+
+#count=8
+Kingdoms = ['Benefactor of the Shining Jewel Foundation', 
+            'Member of the Imperial Ministry of Buya', 
+            'Member of the Royal Ministry of Koguryo',
+            'Member of the Eternal Order of Nagnang?', 
+            'Awarded High Myongye',
+            'Affiliate of the Sovereign', 
+            'Knighted with Royal Nobility', 
+            'Resolved the Gogoon Family']
 
 
 def PWC_Test(test,list):
@@ -112,7 +202,7 @@ def PWC_Test(test,list):
 
 
 def PWC_final(test):
-    list = [Diviner, Geomancer, Shaman, Druid, Monk, Muse, Merchant, Spy, Barbarian, Chongun, Kingdoms]
+    list = [Ranger, Diviner, Geomancer, Shaman, Druid, Monk, Muse, Merchant, Spy, Barbarian, Chongun, Kingdoms]
     pos = 0
     fPWC = 0
     diplo = 0
@@ -133,5 +223,3 @@ def PWC_final(test):
 
 
 #PWC_final(test)
-
-
